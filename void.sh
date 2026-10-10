@@ -17,12 +17,11 @@ sudo xbps-install -Sy tlp tlp-rdw thermald
 
 sudo xbps-install -Sy linux-firmware intel-ucode intel-media-driver mesa-vulkan-intel font-firacode noto-fonts-ttf noto-fonts-cjk noto-fonts-emoji ffmpeg nerd-fonts-symbols-ttf
 
-sudo xbps-install -Sy sddm grim Thunar swww brightnessctl
+sudo xbps-install -Sy sddm grim Thunar swww brightnessctl xorg-minimal
 
 sudo xbps-install -Sy mangowc fastfetch nano firefox Waybar rofi foot
 
 sudo ln -sf /etc/sv/dbus /var/service/
-sudo ln -sf /etc/sv/elogind /var/service/
 sudo ln -sf /etc/sv/NetworkManager /var/service/
 sudo ln -sf /etc/sv/bluetoothd /var/service/
 sudo ln -sf /etc/sv/tlp /var/service/
